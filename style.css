@@ -111,4 +111,7 @@ p{
         background-repeat: no-repeat;
         background-size: contain;
     }
+    .card{
+        transform: scale(0.7);
+    }
   }

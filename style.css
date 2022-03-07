@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+p{
+    font-size: 16px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 450px;
+    height: 640px;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 20px;
+    box-shadow:0px 14px 12px 0px rgba(50, 50, 50, 0.14);
+}
+
+.card .card-image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-main-text{
+    text-align: center;
+    color:  hsl(224, 23%, 55%);
+}
+
+.card-main-text .card-title{
+    font-weight: 800;
+    font-size: 30px;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-plan{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+.card-plan #card-plan-price{
+    padding-left: 20px;
+    color:  hsl(224, 23%, 55%);
+}
+
+#card-anual{
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+}
+
+.card-plan .plan-change{
+    padding-left: 90px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.plan-change:hover{
+    color: rgb(118,108,241);
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.card-payment-area{
+    text-align: center;
+    font-weight: 700;
+    color:  hsl(224, 23%, 55%);
+}
+
+.payment-button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 50px;
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow:0px 14px 12px 0px rgba(50, 50, 50, 0.14);
+}
+
+.payment-button:hover{
+    background-color: rgb(118,108,241);
+    cursor:pointer;
+}
+
+.cancel-order:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+  }
